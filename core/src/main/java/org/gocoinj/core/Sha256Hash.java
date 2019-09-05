@@ -28,6 +28,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
+import org.gocoinj.core.Utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
@@ -44,6 +45,14 @@ public class Sha256Hash implements Serializable, Comparable<Sha256Hash> {
     private Sha256Hash(byte[] rawHashBytes) {
         checkArgument(rawHashBytes.length == LENGTH);
         this.bytes = rawHashBytes;
+    }
+
+    /**
+     * Creates a Sha256Hash by decoding the given hex string. It must be 64 characters long.
+     */
+    public Sha256Hash(String hexString) {
+        checkArgument(hexString.length() == 64);
+        this.bytes = Utils.HEX.decode(hexString);
     }
 
     /**

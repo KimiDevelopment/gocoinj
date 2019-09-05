@@ -70,6 +70,8 @@ public final class Coin implements Monetary, Comparable<Coin>, Serializable {
      */
     public static final Coin SATOSHI = Coin.valueOf(1);
 
+    public static final Coin FOUR_COINS = COIN.multiply(4);
+
     public static final Coin FIFTY_COINS = COIN.multiply(50);
 
     /**
