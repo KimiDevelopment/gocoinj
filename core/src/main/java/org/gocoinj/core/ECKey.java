@@ -1319,7 +1319,7 @@ public class ECKey implements EncryptableItem {
     }
 
     /** The string that prefixes all text messages signed using Bitcoin keys. */
-    private static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Bitcoin Signed Message:\n";
+    private static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Gocoin Signed Message:\n";
     private static final byte[] BITCOIN_SIGNED_MESSAGE_HEADER_BYTES = BITCOIN_SIGNED_MESSAGE_HEADER.getBytes(StandardCharsets.UTF_8);
 
     /**
