@@ -139,14 +139,7 @@ public abstract class NetworkParameters {
     public static final int TARGET_TIMESPAN = 2 * 60;  // 2 weeks per difficulty cycle, on average.
     public static final int TARGET_SPACING = 2 * 60;  // 10 minutes per block.
     public static final int INTERVAL = TARGET_TIMESPAN / TARGET_SPACING;
-    
-    /**
-     * Blocks with a timestamp after this should enforce BIP 16, aka "Pay to script hash". This BIP changed the
-     * network rules in a soft-forking manner, that is, blocks that don't follow the rules are accepted but not
-     * mined upon and thus will be quickly re-orged out as long as the majority are enforcing the rule.
-     */
-    public static final int BIP16_ENFORCE_TIME = 1333238400;
-    
+
     /**
      * The maximum number of coins to be generated
      */
@@ -476,8 +469,7 @@ public abstract class NetworkParameters {
     public EnumSet<Script.VerifyFlag> getTransactionVerificationFlags(final Block block,
             final Transaction transaction, final VersionTally tally, final Integer height) {
         final EnumSet<Script.VerifyFlag> verifyFlags = EnumSet.noneOf(Script.VerifyFlag.class);
-        if (block.getTimeSeconds() >= NetworkParameters.BIP16_ENFORCE_TIME)
-            verifyFlags.add(Script.VerifyFlag.P2SH);
+        verifyFlags.add(Script.VerifyFlag.P2SH);
 
         // Start enforcing CHECKLOCKTIMEVERIFY, (BIP65) for block.nVersion=4
         // blocks, when 75% of the network has upgraded:
