@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.jni;
+package org.gocoinj.jni;
 
-import org.bitcoinj.core.listeners.TransactionConfidenceEventListener;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.core.Transaction;
+import org.gocoinj.core.listeners.TransactionConfidenceEventListener;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.core.Transaction;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

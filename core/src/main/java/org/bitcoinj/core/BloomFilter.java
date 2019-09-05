@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptChunk;
-import org.bitcoinj.script.ScriptPattern;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptChunk;
+import org.gocoinj.script.ScriptPattern;
 
 import com.google.common.base.MoreObjects;
 

@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import org.bitcoin.protocols.payments.Protos.PaymentDetails;
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.utils.ExchangeRate;
-import org.bitcoinj.wallet.KeyChain.KeyPurpose;
-import org.bitcoinj.wallet.Wallet.MissingSigsMode;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.Context;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionOutput;
+import org.gocoinj.utils.ExchangeRate;
+import org.gocoinj.wallet.KeyChain.KeyPurpose;
+import org.gocoinj.wallet.Wallet.MissingSigsMode;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import com.google.common.base.MoreObjects;

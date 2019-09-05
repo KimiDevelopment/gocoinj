@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.gocoinj.core.listeners;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 
 import javax.annotation.*;
 

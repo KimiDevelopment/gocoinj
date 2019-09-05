@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 public class SignatureDecodeException extends Exception {
     public SignatureDecodeException() {

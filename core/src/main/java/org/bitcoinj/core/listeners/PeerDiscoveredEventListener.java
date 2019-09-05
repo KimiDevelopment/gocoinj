@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.gocoinj.core.listeners;
 
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerAddress;
-import org.bitcoinj.core.PeerGroup;
+import org.gocoinj.core.Peer;
+import org.gocoinj.core.PeerAddress;
+import org.gocoinj.core.PeerGroup;
 
 import java.util.Set;
 

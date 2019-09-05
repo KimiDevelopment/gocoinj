@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptPattern;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptPattern;
 
 import com.google.common.base.MoreObjects;
 

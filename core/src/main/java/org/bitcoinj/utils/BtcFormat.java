@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
-import org.bitcoinj.utils.BtcAutoFormat.Style;
-import static org.bitcoinj.utils.BtcAutoFormat.Style.*;
+import org.gocoinj.utils.BtcAutoFormat.Style;
+import static org.gocoinj.utils.BtcAutoFormat.Style.*;
 
-import org.bitcoinj.core.Coin;
+import org.gocoinj.core.Coin;
 import java.util.Objects;
 import com.google.common.collect.ImmutableList;
 import static com.google.common.base.Preconditions.checkArgument;

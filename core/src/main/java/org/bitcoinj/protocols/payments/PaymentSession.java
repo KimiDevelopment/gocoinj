@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.payments;
+package org.gocoinj.protocols.payments;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.crypto.TrustStoreLoader;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.bitcoinj.uri.BitcoinURI;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.SendRequest;
+import org.gocoinj.core.*;
+import org.gocoinj.crypto.TrustStoreLoader;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.gocoinj.uri.BitcoinURI;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.SendRequest;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;

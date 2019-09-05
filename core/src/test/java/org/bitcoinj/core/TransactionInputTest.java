@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 import java.util.List;
 
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.testing.FakeTxBuilder;
-import org.bitcoinj.wallet.AllowUnconfirmedCoinSelector;
-import org.bitcoinj.wallet.SendRequest;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.testing.FakeTxBuilder;
+import org.gocoinj.wallet.AllowUnconfirmedCoinSelector;
+import org.gocoinj.wallet.SendRequest;
+import org.gocoinj.wallet.Wallet;
 import org.junit.Test;
 
 import com.google.common.collect.Lists;

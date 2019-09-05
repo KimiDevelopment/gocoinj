@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.KeyCrypter;
-import org.bitcoinj.crypto.KeyCrypterException;
-import org.bitcoinj.crypto.KeyCrypterScrypt;
-import org.bitcoinj.utils.Threading;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.KeyCrypter;
+import org.gocoinj.crypto.KeyCrypterException;
+import org.gocoinj.crypto.KeyCrypterScrypt;
+import org.gocoinj.utils.Threading;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
-import org.bitcoinj.wallet.BasicKeyChain;
-import org.bitcoinj.wallet.KeyChain;
-import org.bitcoinj.wallet.Protos;
-import org.bitcoinj.wallet.listeners.AbstractKeyChainEventListener;
+import org.gocoinj.wallet.BasicKeyChain;
+import org.gocoinj.wallet.KeyChain;
+import org.gocoinj.wallet.Protos;
+import org.gocoinj.wallet.listeners.AbstractKeyChainEventListener;
 import org.junit.Before;
 import org.junit.Test;
 

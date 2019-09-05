@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.script.ScriptPattern;
+import org.gocoinj.core.*;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptException;
+import org.gocoinj.script.ScriptPattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.gocoinj.script;
 
-import org.bitcoinj.core.VerificationException;
+import org.gocoinj.core.VerificationException;
 
 @SuppressWarnings("serial")
 public class ScriptException extends VerificationException {

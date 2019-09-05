@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.gocoinj.core.listeners;
 
-import org.bitcoinj.core.AbstractBlockChain;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.VerificationException;
+import org.gocoinj.core.AbstractBlockChain;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.VerificationException;
 
 /**
  * Listener interface for when a new block on the best chain is seen.

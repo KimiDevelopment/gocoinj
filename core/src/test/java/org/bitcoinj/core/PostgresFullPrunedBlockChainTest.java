@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.store.BlockStoreException;
-import org.bitcoinj.store.FullPrunedBlockStore;
-import org.bitcoinj.store.PostgresFullPrunedBlockStore;
+import org.gocoinj.store.BlockStoreException;
+import org.gocoinj.store.FullPrunedBlockStore;
+import org.gocoinj.store.PostgresFullPrunedBlockStore;
 import org.junit.After;
 import org.junit.Ignore;
 import org.junit.Test;

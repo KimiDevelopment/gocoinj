@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.store.FullPrunedBlockStore;
+import org.gocoinj.store.FullPrunedBlockStore;
 
 import java.util.List;
 

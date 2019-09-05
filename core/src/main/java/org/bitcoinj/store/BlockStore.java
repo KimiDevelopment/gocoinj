@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
 
 /**
  * An implementor of BlockStore saves StoredBlock objects to disk. Different implementations store them in

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet.listeners;
+package org.gocoinj.wallet.listeners;
 
-import org.bitcoinj.wallet.KeyChainGroup;
+import org.gocoinj.wallet.KeyChainGroup;
 
 public interface CurrentKeyChangeEventListener {
     /**

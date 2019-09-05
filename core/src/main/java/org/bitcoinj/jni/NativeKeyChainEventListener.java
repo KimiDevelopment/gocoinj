@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.jni;
+package org.gocoinj.jni;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
 
 import java.util.List;
 

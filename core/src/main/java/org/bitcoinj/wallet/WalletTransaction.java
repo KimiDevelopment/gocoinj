@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.Transaction;
+import org.gocoinj.core.Transaction;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

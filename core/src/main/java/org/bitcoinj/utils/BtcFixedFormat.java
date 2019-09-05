@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
-import static org.bitcoinj.core.Coin.SMALLEST_UNIT_EXPONENT;
+import static org.gocoinj.core.Coin.SMALLEST_UNIT_EXPONENT;
 import static com.google.common.base.Preconditions.checkArgument;
 import java.util.Objects;
-import org.bitcoinj.core.Coin;
+import org.gocoinj.core.Coin;
 
 import java.math.BigInteger;
 import java.text.DecimalFormat;

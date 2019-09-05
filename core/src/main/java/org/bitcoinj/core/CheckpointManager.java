@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
-import org.bitcoinj.store.FullPrunedBlockStore;
+import org.gocoinj.store.BlockStore;
+import org.gocoinj.store.BlockStoreException;
+import org.gocoinj.store.FullPrunedBlockStore;
 import com.google.common.hash.HashCode;
 import com.google.common.hash.Hasher;
 import com.google.common.hash.Hashing;
 import com.google.common.io.BaseEncoding;
 
-import org.bitcoinj.store.SPVBlockStore;
+import org.gocoinj.store.SPVBlockStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
-import static org.bitcoinj.core.Coin.CENT;
-import static org.bitcoinj.core.Coin.COIN;
-import static org.bitcoinj.core.Coin.SATOSHI;
-import static org.bitcoinj.core.Coin.ZERO;
+import static org.gocoinj.core.Coin.CENT;
+import static org.gocoinj.core.Coin.COIN;
+import static org.gocoinj.core.Coin.SATOSHI;
+import static org.gocoinj.core.Coin.ZERO;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Locale;
@@ -27,7 +27,7 @@ import java.util.Locale;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import org.bitcoinj.core.Coin;
+import org.gocoinj.core.Coin;
 
 public class MonetaryFormatTest {
 

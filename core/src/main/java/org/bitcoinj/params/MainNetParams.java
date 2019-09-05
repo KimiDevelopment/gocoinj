@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.gocoinj.params;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.net.discovery.*;
+import org.gocoinj.core.*;
+import org.gocoinj.net.discovery.*;
 
 import java.net.*;
 

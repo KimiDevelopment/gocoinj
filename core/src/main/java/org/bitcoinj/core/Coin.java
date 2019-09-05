@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.utils.MonetaryFormat;
+import org.gocoinj.utils.MonetaryFormat;
 import com.google.common.math.LongMath;
 
 import java.io.Serializable;

@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
-import org.bitcoinj.core.listeners.DownloadProgressTracker;
-import org.bitcoinj.core.*;
-import org.bitcoinj.net.discovery.DnsDiscovery;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.SPVBlockStore;
-import org.bitcoinj.wallet.DeterministicSeed;
-import org.bitcoinj.wallet.KeyChainGroupStructure;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.listeners.DownloadProgressTracker;
+import org.gocoinj.core.*;
+import org.gocoinj.net.discovery.DnsDiscovery;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.SPVBlockStore;
+import org.gocoinj.wallet.DeterministicSeed;
+import org.gocoinj.wallet.KeyChainGroupStructure;
+import org.gocoinj.wallet.Wallet;
 
 import java.io.File;
 

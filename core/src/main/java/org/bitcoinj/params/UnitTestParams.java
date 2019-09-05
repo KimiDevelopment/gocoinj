@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.gocoinj.params;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 
 import java.math.BigInteger;
 

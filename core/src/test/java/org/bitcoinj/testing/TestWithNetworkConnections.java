@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.core.listeners.PeerDisconnectedEventListener;
-import org.bitcoinj.core.listeners.PreMessageReceivedEventListener;
-import org.bitcoinj.core.*;
-import org.bitcoinj.net.*;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.MemoryBlockStore;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.KeyChainGroup;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.listeners.PeerDisconnectedEventListener;
+import org.gocoinj.core.listeners.PreMessageReceivedEventListener;
+import org.gocoinj.core.*;
+import org.gocoinj.net.*;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.BlockStore;
+import org.gocoinj.store.MemoryBlockStore;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.KeyChainGroup;
+import org.gocoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.SettableFuture;
 

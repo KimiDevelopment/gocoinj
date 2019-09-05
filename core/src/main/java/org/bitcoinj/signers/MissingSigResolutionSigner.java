@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.signers;
+package org.gocoinj.signers;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionWitness;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptChunk;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.wallet.KeyBag;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.TransactionInput;
+import org.gocoinj.core.TransactionWitness;
+import org.gocoinj.crypto.TransactionSignature;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptChunk;
+import org.gocoinj.script.ScriptPattern;
+import org.gocoinj.wallet.KeyBag;
+import org.gocoinj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

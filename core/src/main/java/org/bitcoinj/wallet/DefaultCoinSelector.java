@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionOutput;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionConfidence;
+import org.gocoinj.core.TransactionOutput;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.math.BigInteger;

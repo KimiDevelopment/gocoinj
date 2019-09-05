@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.gocoinj.crypto;
 
 import com.google.common.base.Joiner;
-import org.bitcoinj.protocols.payments.PaymentSession;
+import org.gocoinj.protocols.payments.PaymentSession;
 import org.bouncycastle.asn1.ASN1ObjectIdentifier;
 import org.bouncycastle.asn1.ASN1String;
 import org.bouncycastle.asn1.x500.AttributeTypeAndValue;

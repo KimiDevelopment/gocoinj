@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
-import static org.bitcoinj.utils.BtcFormat.COIN_SCALE;
-import static org.bitcoinj.utils.BtcFormat.MICROCOIN_SCALE;
-import static org.bitcoinj.utils.BtcFormat.MILLICOIN_SCALE;
+import static org.gocoinj.utils.BtcFormat.COIN_SCALE;
+import static org.gocoinj.utils.BtcFormat.MICROCOIN_SCALE;
+import static org.gocoinj.utils.BtcFormat.MILLICOIN_SCALE;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;

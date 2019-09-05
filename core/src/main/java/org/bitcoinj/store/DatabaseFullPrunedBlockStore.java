@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
+import org.gocoinj.core.*;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.Script.ScriptType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

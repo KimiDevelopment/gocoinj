@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.gocoinj.core.listeners;
 
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.FilteredBlock;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.VerificationException;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.FilteredBlock;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.VerificationException;
 
 /**
  * Listener interface for when we receive a new block that contains a relevant

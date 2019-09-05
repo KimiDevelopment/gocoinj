@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.core.listeners.TransactionConfidenceEventListener;
-import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.MemoryBlockStore;
-import org.bitcoinj.testing.FakeTxBuilder;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletTransaction;
-import org.bitcoinj.wallet.listeners.WalletChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.bitcoinj.wallet.listeners.WalletReorganizeEventListener;
+import org.gocoinj.core.listeners.TransactionConfidenceEventListener;
+import org.gocoinj.core.TransactionConfidence.ConfidenceType;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.MemoryBlockStore;
+import org.gocoinj.testing.FakeTxBuilder;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletTransaction;
+import org.gocoinj.wallet.listeners.WalletChangeEventListener;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.wallet.listeners.WalletReorganizeEventListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -43,7 +43,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.bitcoinj.core.Coin.*;
+import static org.gocoinj.core.Coin.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

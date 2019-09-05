@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 import com.google.common.util.concurrent.SettableFuture;
 
 import java.net.InetAddress;

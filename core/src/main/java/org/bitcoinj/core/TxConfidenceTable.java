@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.utils.*;
+import org.gocoinj.utils.*;
 
 import javax.annotation.*;
 import java.lang.ref.*;

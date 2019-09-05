@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.*;
+import org.gocoinj.core.*;
+import org.gocoinj.utils.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

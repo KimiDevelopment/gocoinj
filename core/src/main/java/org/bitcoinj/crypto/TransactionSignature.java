@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.gocoinj.crypto;
 
-import org.bitcoinj.core.SignatureDecodeException;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.core.Transaction.SigHash;
+import org.gocoinj.core.SignatureDecodeException;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.VerificationException;
+import org.gocoinj.core.Transaction.SigHash;
 import com.google.common.base.Preconditions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

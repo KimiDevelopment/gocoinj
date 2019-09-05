@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

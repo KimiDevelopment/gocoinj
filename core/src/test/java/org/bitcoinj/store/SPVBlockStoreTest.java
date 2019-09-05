@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -26,15 +26,15 @@ import java.math.BigInteger;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.params.UnitTestParams;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Block;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.params.UnitTestParams;
 import org.junit.Before;
 import org.junit.Test;
 

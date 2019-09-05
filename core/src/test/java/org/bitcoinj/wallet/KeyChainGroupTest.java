@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.KeyChain.KeyPurpose;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.*;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.Script.ScriptType;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.KeyChain.KeyPurpose;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;

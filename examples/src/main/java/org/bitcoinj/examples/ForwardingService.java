@@ -15,24 +15,24 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.InsufficientMoneyException;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.crypto.KeyCrypterException;
-import org.bitcoinj.kits.WalletAppKit;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.RegTestParams;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.wallet.SendRequest;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.InsufficientMoneyException;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionConfidence;
+import org.gocoinj.crypto.KeyCrypterException;
+import org.gocoinj.kits.WalletAppKit;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.params.RegTestParams;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.wallet.SendRequest;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

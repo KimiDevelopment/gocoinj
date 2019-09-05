@@ -15,50 +15,50 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.BlockTest;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.PeerAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.Transaction.Purpose;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.testing.FakeTxBuilder;
-import org.bitcoinj.testing.FooWalletExtension;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.DeterministicKeyChain;
-import org.bitcoinj.wallet.KeyChain;
-import org.bitcoinj.wallet.KeyChainGroup;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Block;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.BlockTest;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.Context;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.PeerAddress;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.Transaction.Purpose;
+import org.gocoinj.core.TransactionConfidence;
+import org.gocoinj.core.TransactionConfidence.ConfidenceType;
+import org.gocoinj.core.TransactionInput;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.DeterministicKey;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.testing.FakeTxBuilder;
+import org.gocoinj.testing.FooWalletExtension;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.DeterministicKeyChain;
+import org.gocoinj.wallet.KeyChain;
+import org.gocoinj.wallet.KeyChainGroup;
 
 import com.google.common.io.ByteStreams;
 import com.google.protobuf.ByteString;
 
-import org.bitcoinj.wallet.MarriedKeyChain;
-import org.bitcoinj.wallet.Protos;
-import org.bitcoinj.wallet.UnreadableWalletException;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletExtension;
-import org.bitcoinj.wallet.WalletProtobufSerializer;
-import org.bitcoinj.wallet.WalletTransaction;
-import org.bitcoinj.wallet.WalletTransaction.Pool;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.wallet.MarriedKeyChain;
+import org.gocoinj.wallet.Protos;
+import org.gocoinj.wallet.UnreadableWalletException;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletExtension;
+import org.gocoinj.wallet.WalletProtobufSerializer;
+import org.gocoinj.wallet.WalletTransaction;
+import org.gocoinj.wallet.WalletTransaction.Pool;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -72,8 +72,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import static org.bitcoinj.core.Coin.*;
-import static org.bitcoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.gocoinj.core.Coin.*;
+import static org.gocoinj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 

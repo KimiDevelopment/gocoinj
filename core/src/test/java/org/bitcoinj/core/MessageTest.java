@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.params.UnitTestParams;
+import org.gocoinj.params.UnitTestParams;
 import org.junit.Test;
 
 public class MessageTest {

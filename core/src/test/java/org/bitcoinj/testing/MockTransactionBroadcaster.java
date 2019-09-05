@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.*;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.utils.ContextPropagatingThreadFactory;
-import org.bitcoinj.wallet.SendRequest;
+import org.gocoinj.utils.ContextPropagatingThreadFactory;
+import org.gocoinj.wallet.SendRequest;
 import org.slf4j.*;
 
 import static com.google.common.base.Preconditions.*;

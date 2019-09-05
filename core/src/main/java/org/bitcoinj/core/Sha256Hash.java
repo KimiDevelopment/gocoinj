@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.io.ByteStreams;
 import com.google.common.primitives.*;

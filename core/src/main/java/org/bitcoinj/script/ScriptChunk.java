@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.gocoinj.script;
 
-import org.bitcoinj.core.Utils;
+import org.gocoinj.core.Utils;
 
 import javax.annotation.Nullable;
 
@@ -28,7 +28,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.bitcoinj.script.ScriptOpCodes.*;
+import static org.gocoinj.script.ScriptOpCodes.*;
 
 /**
  * A script element that is either a data push (signature, pubkey, etc) or a non-push (logic, numeric, etc) operation.

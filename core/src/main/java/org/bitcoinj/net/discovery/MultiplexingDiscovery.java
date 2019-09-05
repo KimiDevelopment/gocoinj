@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net.discovery;
+package org.gocoinj.net.discovery;
 
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.VersionMessage;
-import org.bitcoinj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
-import org.bitcoinj.utils.*;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.VersionMessage;
+import org.gocoinj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
+import org.gocoinj.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

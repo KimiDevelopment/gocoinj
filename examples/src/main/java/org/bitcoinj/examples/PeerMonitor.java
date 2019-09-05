@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
-import org.bitcoinj.core.listeners.PeerConnectedEventListener;
-import org.bitcoinj.core.listeners.PeerDisconnectedEventListener;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerGroup;
-import org.bitcoinj.net.discovery.DnsDiscovery;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.utils.BriefLogFormatter;
+import org.gocoinj.core.listeners.PeerConnectedEventListener;
+import org.gocoinj.core.listeners.PeerDisconnectedEventListener;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Peer;
+import org.gocoinj.core.PeerGroup;
+import org.gocoinj.net.discovery.DnsDiscovery;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.utils.BriefLogFormatter;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;

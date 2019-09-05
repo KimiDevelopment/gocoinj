@@ -15,23 +15,23 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
 import com.google.common.collect.*;
 import com.google.protobuf.*;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.listeners.CurrentKeyChangeEventListener;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.*;
+import org.gocoinj.script.*;
+import org.gocoinj.script.Script.ScriptType;
+import org.gocoinj.utils.*;
+import org.gocoinj.wallet.listeners.CurrentKeyChangeEventListener;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
 import org.slf4j.*;
 import org.bouncycastle.crypto.params.*;
 
@@ -656,7 +656,7 @@ public class KeyChainGroup implements KeyBag {
     /**
      * Whether the active keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.bitcoinj.wallet.MarriedKeyChain
+     * @see org.gocoinj.wallet.MarriedKeyChain
      */
     public final boolean isMarried() {
         return chains != null && !chains.isEmpty() && getActiveKeyChain().isMarried();
@@ -666,7 +666,7 @@ public class KeyChainGroup implements KeyBag {
      * Encrypt the keys in the group using the KeyCrypter and the AES key. A good default KeyCrypter to use is
      * {@link KeyCrypterScrypt}.
      *
-     * @throws org.bitcoinj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
+     * @throws org.gocoinj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
      *         leaving the group unchanged.
      * @throws DeterministicUpgradeRequiredException Thrown if there are random keys but no HD chain.
      */
@@ -695,7 +695,7 @@ public class KeyChainGroup implements KeyBag {
      * Decrypt the keys in the group using the previously given key crypter and the AES key. A good default
      * KeyCrypter to use is {@link KeyCrypterScrypt}.
      *
-     * @throws org.bitcoinj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
+     * @throws org.gocoinj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
      */
     public void decrypt(KeyParameter aesKey) {
         checkNotNull(aesKey);

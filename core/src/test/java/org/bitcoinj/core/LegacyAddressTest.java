@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.Networks;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.script.Script.ScriptType;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.params.Networks;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.script.ScriptPattern;
+import org.gocoinj.script.Script.ScriptType;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -37,7 +37,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.bitcoinj.core.Utils.HEX;
+import static org.gocoinj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class LegacyAddressTest {

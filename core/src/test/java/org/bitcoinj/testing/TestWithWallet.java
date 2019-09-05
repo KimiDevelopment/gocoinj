@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.core.AbstractBlockChain;
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.MemoryBlockStore;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.AbstractBlockChain;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Block;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.Context;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.VerificationException;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.BlockStore;
+import org.gocoinj.store.MemoryBlockStore;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static org.bitcoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.bitcoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.gocoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.gocoinj.testing.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

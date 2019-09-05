@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net;
+package org.gocoinj.net;
 
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.PeerFilterProvider;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.PeerFilterProvider;
 import com.google.common.collect.ImmutableList;
-import org.bitcoinj.core.PeerGroup;
+import org.gocoinj.core.PeerGroup;
 
 import java.util.LinkedList;
 

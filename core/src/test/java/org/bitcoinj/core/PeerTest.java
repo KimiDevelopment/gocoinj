@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.collect.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.testing.FakeTxBuilder;
-import org.bitcoinj.testing.InboundMessageQueuer;
-import org.bitcoinj.testing.TestWithNetworkConnections;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.script.Script;
+import org.gocoinj.testing.FakeTxBuilder;
+import org.gocoinj.testing.InboundMessageQueuer;
+import org.gocoinj.testing.TestWithNetworkConnections;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -54,8 +54,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.bitcoinj.core.Coin.*;
-import static org.bitcoinj.testing.FakeTxBuilder.*;
+import static org.gocoinj.core.Coin.*;
+import static org.gocoinj.testing.FakeTxBuilder.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

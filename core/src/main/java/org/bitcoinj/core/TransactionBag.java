@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import javax.annotation.Nullable;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletTransaction;
+import org.gocoinj.script.Script;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletTransaction;
 
 import java.util.Map;
 

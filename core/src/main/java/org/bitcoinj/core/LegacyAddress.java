@@ -16,15 +16,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import java.util.Arrays;
 import java.util.Objects;
 
 import javax.annotation.Nullable;
 
-import org.bitcoinj.params.Networks;
-import org.bitcoinj.script.Script.ScriptType;
+import org.gocoinj.params.Networks;
+import org.gocoinj.script.Script.ScriptType;
 
 /**
  * <p>A Bitcoin address looks like 1MsScoe2fTJoq4ZPdQgqyhgWeoNamYPevy and is derived from an elliptic curve public key

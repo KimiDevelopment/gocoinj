@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.tools;
+package org.gocoinj.tools;
 
-import org.bitcoinj.crypto.TrustStoreLoader;
-import org.bitcoinj.protocols.payments.PaymentProtocol;
-import org.bitcoinj.protocols.payments.PaymentProtocolException;
-import org.bitcoinj.protocols.payments.PaymentSession;
-import org.bitcoinj.uri.BitcoinURI;
-import org.bitcoinj.uri.BitcoinURIParseException;
+import org.gocoinj.crypto.TrustStoreLoader;
+import org.gocoinj.protocols.payments.PaymentProtocol;
+import org.gocoinj.protocols.payments.PaymentProtocolException;
+import org.gocoinj.protocols.payments.PaymentSession;
+import org.gocoinj.uri.BitcoinURI;
+import org.gocoinj.uri.BitcoinURIParseException;
 import org.bitcoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;

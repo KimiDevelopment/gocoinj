@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.net.*;
-import org.bitcoinj.params.*;
-import org.bitcoinj.store.*;
-import org.bitcoinj.utils.*;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.net.*;
+import org.gocoinj.params.*;
+import org.gocoinj.store.*;
+import org.gocoinj.utils.*;
 import org.slf4j.*;
 
 import java.io.*;

@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.MoreExecutors;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.kits.WalletAppKit;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.Wallet.BalanceType;
+import org.gocoinj.core.*;
+import org.gocoinj.kits.WalletAppKit;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

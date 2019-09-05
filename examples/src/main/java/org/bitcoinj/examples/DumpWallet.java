@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
 import java.io.File;
 
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.wallet.Wallet;
 
 /**
  * DumpWallet loads a serialized wallet and prints information about what it contains.

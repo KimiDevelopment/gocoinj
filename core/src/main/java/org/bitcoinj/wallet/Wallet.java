@@ -15,60 +15,60 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
 import com.google.common.annotations.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
 import com.google.protobuf.*;
 import net.jcip.annotations.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Base58;
-import org.bitcoinj.core.AbstractBlockChain;
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.FilteredBlock;
-import org.bitcoinj.core.InsufficientMoneyException;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.Message;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerFilterProvider;
-import org.bitcoinj.core.PeerGroup;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionBag;
-import org.bitcoinj.core.TransactionBroadcast;
-import org.bitcoinj.core.TransactionBroadcaster;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionOutPoint;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.core.UTXO;
-import org.bitcoinj.core.UTXOProvider;
-import org.bitcoinj.core.UTXOProviderException;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.core.TransactionConfidence.*;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.signers.*;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.Protos.Wallet.*;
-import org.bitcoinj.wallet.WalletTransaction.*;
-import org.bitcoinj.wallet.listeners.CurrentKeyChangeEventListener;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
-import org.bitcoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsSentEventListener;
-import org.bitcoinj.wallet.listeners.WalletReorganizeEventListener;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Base58;
+import org.gocoinj.core.AbstractBlockChain;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.Context;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.FilteredBlock;
+import org.gocoinj.core.InsufficientMoneyException;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.Message;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Peer;
+import org.gocoinj.core.PeerFilterProvider;
+import org.gocoinj.core.PeerGroup;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionBag;
+import org.gocoinj.core.TransactionBroadcast;
+import org.gocoinj.core.TransactionBroadcaster;
+import org.gocoinj.core.TransactionConfidence;
+import org.gocoinj.core.TransactionInput;
+import org.gocoinj.core.TransactionOutPoint;
+import org.gocoinj.core.TransactionOutput;
+import org.gocoinj.core.UTXO;
+import org.gocoinj.core.UTXOProvider;
+import org.gocoinj.core.UTXOProviderException;
+import org.gocoinj.core.Utils;
+import org.gocoinj.core.VerificationException;
+import org.gocoinj.core.TransactionConfidence.*;
+import org.gocoinj.crypto.*;
+import org.gocoinj.script.*;
+import org.gocoinj.script.Script.ScriptType;
+import org.gocoinj.signers.*;
+import org.gocoinj.utils.*;
+import org.gocoinj.wallet.Protos.Wallet.*;
+import org.gocoinj.wallet.WalletTransaction.*;
+import org.gocoinj.wallet.listeners.CurrentKeyChangeEventListener;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.gocoinj.wallet.listeners.WalletChangeEventListener;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.wallet.listeners.WalletCoinsSentEventListener;
+import org.gocoinj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.*;
 import org.bouncycastle.crypto.params.*;
 
@@ -1277,7 +1277,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the immutable seed for the current active HD chain.
-     * @throws org.bitcoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
+     * @throws org.gocoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
      */
     public DeterministicSeed getKeyChainSeed() {
         keyChainGroupLock.lock();
@@ -5242,7 +5242,7 @@ public class Wallet extends BaseTaggableObject
      * re-organisation of the wallet contents on the block chain. For instance, in future the wallet may choose to
      * optimise itself to reduce fees or improve privacy.</p>
      */
-    public void setTransactionBroadcaster(@Nullable org.bitcoinj.core.TransactionBroadcaster broadcaster) {
+    public void setTransactionBroadcaster(@Nullable org.gocoinj.core.TransactionBroadcaster broadcaster) {
         Transaction[] toBroadcast = {};
         lock.lock();
         try {
@@ -5348,7 +5348,7 @@ public class Wallet extends BaseTaggableObject
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      *
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.bitcoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.gocoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(@Nullable KeyParameter aesKey, boolean signAndSend)
             throws DeterministicUpgradeRequiresPassword {
@@ -5368,7 +5368,7 @@ public class Wallet extends BaseTaggableObject
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      *
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.bitcoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.gocoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(KeyChainGroupStructure structure,
             @Nullable KeyParameter aesKey, boolean signAndSend) throws DeterministicUpgradeRequiresPassword {

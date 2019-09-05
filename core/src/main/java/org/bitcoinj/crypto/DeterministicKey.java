@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.gocoinj.crypto;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.script.Script;
+import org.gocoinj.core.*;
+import org.gocoinj.script.Script;
 
 import com.google.common.base.MoreObjects;
 import org.bouncycastle.crypto.params.KeyParameter;
@@ -32,7 +32,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-import static org.bitcoinj.core.Utils.HEX;
+import static org.gocoinj.core.Utils.HEX;
 import static com.google.common.base.Preconditions.*;
 
 /**

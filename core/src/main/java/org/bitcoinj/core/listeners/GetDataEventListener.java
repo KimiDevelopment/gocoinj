@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.gocoinj.core.listeners;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.Threading;
+import org.gocoinj.core.*;
+import org.gocoinj.utils.Threading;
 
 import javax.annotation.*;
 import java.util.*;

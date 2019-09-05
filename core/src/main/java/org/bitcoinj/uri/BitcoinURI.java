@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.uri;
+package org.gocoinj.uri;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.AddressFormatException;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.params.AbstractBitcoinNetParams;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.AddressFormatException;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 

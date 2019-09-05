@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigInteger;
 
-import org.bitcoinj.core.Coin;
+import org.gocoinj.core.Coin;
 
 import java.util.Objects;
 

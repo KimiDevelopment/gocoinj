@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.tools;
+package org.gocoinj.tools;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerGroup;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.net.discovery.DnsDiscovery;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.wallet.DefaultRiskAnalysis;
-import org.bitcoinj.wallet.RiskAnalysis.Result;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Peer;
+import org.gocoinj.core.PeerGroup;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.net.discovery.DnsDiscovery;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.utils.BriefLogFormatter;
+import org.gocoinj.wallet.DefaultRiskAnalysis;
+import org.gocoinj.wallet.RiskAnalysis.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

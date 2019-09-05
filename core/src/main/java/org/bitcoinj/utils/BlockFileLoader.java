@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.ProtocolException;
-import org.bitcoinj.core.Utils;
+import org.gocoinj.core.Block;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.ProtocolException;
+import org.gocoinj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

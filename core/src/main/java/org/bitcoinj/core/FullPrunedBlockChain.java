@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.VerifyFlag;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.store.BlockStoreException;
-import org.bitcoinj.store.FullPrunedBlockStore;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletExtension;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.Script.VerifyFlag;
+import org.gocoinj.script.ScriptPattern;
+import org.gocoinj.store.BlockStoreException;
+import org.gocoinj.store.FullPrunedBlockStore;
+import org.gocoinj.utils.*;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

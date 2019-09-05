@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.crypto.ChildNumber;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.crypto.KeyCrypter;
-import org.bitcoinj.script.Script;
+import org.gocoinj.crypto.ChildNumber;
+import org.gocoinj.crypto.DeterministicKey;
+import org.gocoinj.crypto.KeyCrypter;
+import org.gocoinj.script.Script;
 
 import java.util.List;
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 import com.google.common.base.Preconditions;
 
 import javax.annotation.Nullable;

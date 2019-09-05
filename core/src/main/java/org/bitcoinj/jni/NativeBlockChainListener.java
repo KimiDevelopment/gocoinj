@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.jni;
+package org.gocoinj.jni;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 
 import java.util.List;
-import org.bitcoinj.core.listeners.NewBestBlockListener;
-import org.bitcoinj.core.listeners.ReorganizeListener;
-import org.bitcoinj.core.listeners.TransactionReceivedInBlockListener;
+import org.gocoinj.core.listeners.NewBestBlockListener;
+import org.gocoinj.core.listeners.ReorganizeListener;
+import org.gocoinj.core.listeners.TransactionReceivedInBlockListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

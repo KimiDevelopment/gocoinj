@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.kits;
+package org.gocoinj.kits;
 
 import com.google.common.collect.*;
 import com.google.common.io.Closeables;
 import com.google.common.util.concurrent.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.core.*;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.net.discovery.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.*;
-import org.bitcoinj.wallet.*;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.core.*;
+import org.gocoinj.crypto.DeterministicKey;
+import org.gocoinj.net.discovery.*;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.*;
+import org.gocoinj.wallet.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

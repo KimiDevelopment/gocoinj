@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.net.discovery.HttpDiscovery;
+import org.gocoinj.net.discovery.HttpDiscovery;
 
 import java.io.IOException;
 import java.io.OutputStream;

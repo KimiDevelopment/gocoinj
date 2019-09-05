@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.gocoinj.script;
 
-import static org.bitcoinj.script.ScriptOpCodes.OP_0;
-import static org.bitcoinj.script.ScriptOpCodes.OP_IF;
-import static org.bitcoinj.script.ScriptOpCodes.OP_PUSHDATA1;
-import static org.bitcoinj.script.ScriptOpCodes.OP_PUSHDATA2;
-import static org.bitcoinj.script.ScriptOpCodes.OP_PUSHDATA4;
+import static org.gocoinj.script.ScriptOpCodes.OP_0;
+import static org.gocoinj.script.ScriptOpCodes.OP_IF;
+import static org.gocoinj.script.ScriptOpCodes.OP_PUSHDATA1;
+import static org.gocoinj.script.ScriptOpCodes.OP_PUSHDATA2;
+import static org.gocoinj.script.ScriptOpCodes.OP_PUSHDATA4;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

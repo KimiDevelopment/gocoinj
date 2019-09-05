@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Base58;
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.DumpedPrivateKey;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.PeerAddress;
-import org.bitcoinj.core.PeerGroup;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.MemoryBlockStore;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Base58;
+import org.gocoinj.core.BlockChain;
+import org.gocoinj.core.DumpedPrivateKey;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.PeerAddress;
+import org.gocoinj.core.PeerGroup;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.store.MemoryBlockStore;
+import org.gocoinj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

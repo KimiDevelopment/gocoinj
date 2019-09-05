@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,22 +28,22 @@ import java.util.concurrent.TimeUnit;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.AddressFormatException;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.StoredUndoableBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionOutputChanges;
-import org.bitcoinj.core.UTXO;
-import org.bitcoinj.core.UTXOProviderException;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.AddressFormatException;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.StoredUndoableBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionOutputChanges;
+import org.gocoinj.core.UTXO;
+import org.gocoinj.core.UTXOProviderException;
+import org.gocoinj.core.Utils;
+import org.gocoinj.core.VerificationException;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptException;
 import org.iq80.leveldb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

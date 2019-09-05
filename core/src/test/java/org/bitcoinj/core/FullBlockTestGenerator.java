@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import org.bitcoinj.core.Transaction.SigHash;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.script.ScriptPattern;
+import org.gocoinj.core.Transaction.SigHash;
+import org.gocoinj.crypto.TransactionSignature;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.script.ScriptException;
+import org.gocoinj.script.ScriptPattern;
 
 import com.google.common.base.Preconditions;
 
@@ -35,8 +35,8 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
 
-import static org.bitcoinj.core.Coin.*;
-import static org.bitcoinj.script.ScriptOpCodes.*;
+import static org.gocoinj.core.Coin.*;
+import static org.gocoinj.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 

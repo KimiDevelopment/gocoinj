@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.script.*;
-import org.bitcoinj.wallet.*;
+import org.gocoinj.script.*;
+import org.gocoinj.wallet.*;
 
 import javax.annotation.*;
 import java.io.*;

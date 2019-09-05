@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.script.Script;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.script.Script;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import javax.annotation.Nullable;

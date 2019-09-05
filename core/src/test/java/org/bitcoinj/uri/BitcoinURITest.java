@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.uri;
+package org.gocoinj.uri;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.TestNet3Params;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.params.TestNet3Params;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
 
-import static org.bitcoinj.core.Coin.*;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.SegwitAddress;
+import static org.gocoinj.core.Coin.*;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.SegwitAddress;
 
 import static org.junit.Assert.*;
 

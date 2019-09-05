@@ -15,27 +15,27 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
 import com.google.protobuf.Message;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.PeerAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionOutPoint;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.core.TransactionWitness;
-import org.bitcoinj.crypto.KeyCrypter;
-import org.bitcoinj.crypto.KeyCrypterScrypt;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.utils.ExchangeRate;
-import org.bitcoinj.utils.Fiat;
-import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.PeerAddress;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionConfidence;
+import org.gocoinj.core.TransactionConfidence.ConfidenceType;
+import org.gocoinj.core.TransactionInput;
+import org.gocoinj.core.TransactionOutPoint;
+import org.gocoinj.core.TransactionOutput;
+import org.gocoinj.core.TransactionWitness;
+import org.gocoinj.crypto.KeyCrypter;
+import org.gocoinj.crypto.KeyCrypterScrypt;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptException;
+import org.gocoinj.utils.ExchangeRate;
+import org.gocoinj.utils.Fiat;
+import org.gocoinj.wallet.Protos.Wallet.EncryptionType;
 
 import com.google.protobuf.ByteString;
 import com.google.protobuf.CodedInputStream;
@@ -706,7 +706,7 @@ public class WalletProtobufSerializer {
     }
 
     private WalletTransaction connectTransactionOutputs(final NetworkParameters params,
-                                                        final org.bitcoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
+                                                        final org.gocoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
         Transaction tx = txMap.get(txProto.getHash());
         final WalletTransaction.Pool pool;
         switch (txProto.getPool()) {

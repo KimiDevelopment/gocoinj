@@ -15,31 +15,31 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.gocoinj.params;
 
 import static com.google.common.base.Preconditions.checkState;
 
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.utils.MonetaryFormat;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
+import org.gocoinj.core.Block;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.StoredBlock;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.TransactionOutput;
+import org.gocoinj.core.Utils;
+import org.gocoinj.utils.MonetaryFormat;
+import org.gocoinj.core.VerificationException;
+import org.gocoinj.store.BlockStore;
+import org.gocoinj.store.BlockStoreException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Stopwatch;
 
-import org.bitcoinj.core.BitcoinSerializer;
+import org.gocoinj.core.BitcoinSerializer;
 
 /**
  * Parameters for Bitcoin-like networks.

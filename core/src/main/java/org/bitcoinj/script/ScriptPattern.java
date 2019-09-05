@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.gocoinj.script;
 
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.SegwitAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Utils;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.SegwitAddress;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.Utils;
 
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.bitcoinj.script.Script.decodeFromOpN;
-import static org.bitcoinj.script.ScriptOpCodes.*;
+import static org.gocoinj.script.Script.decodeFromOpN;
+import static org.gocoinj.script.ScriptOpCodes.*;
 
 /**
  * This is a Script pattern matcher with some typical script patterns

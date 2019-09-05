@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.gocoinj.utils;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 import org.slf4j.*;
 
 import java.util.concurrent.*;

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.core.BloomFilter;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.*;
+import org.gocoinj.script.Script;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Stopwatch;
@@ -1346,7 +1346,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     /**
      * Whether the keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.bitcoinj.wallet.MarriedKeyChain
+     * @see org.gocoinj.wallet.MarriedKeyChain
      */
     public boolean isMarried() {
         return false;

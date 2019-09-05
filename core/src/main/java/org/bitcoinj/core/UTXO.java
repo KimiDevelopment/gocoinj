@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.script.*;
+import org.gocoinj.script.*;
 
 import java.io.*;
 import java.math.*;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.gocoinj.store;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.NetworkParameters;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.NetworkParameters;
 
 import java.util.ArrayList;
 import java.util.Collections;

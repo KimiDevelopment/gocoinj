@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.gocoinj.params;
 
-import org.bitcoinj.core.NetworkParameters;
+import org.gocoinj.core.NetworkParameters;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.TransactionOutput;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.TransactionOutput;
 
 import java.util.List;
 

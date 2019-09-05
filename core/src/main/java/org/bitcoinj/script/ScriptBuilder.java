@@ -16,17 +16,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.gocoinj.script;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.SegwitAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script.ScriptType;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.SegwitAddress;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.core.Utils;
+import org.gocoinj.crypto.TransactionSignature;
+import org.gocoinj.script.Script.ScriptType;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -39,7 +39,7 @@ import java.util.Stack;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
-import static org.bitcoinj.script.ScriptOpCodes.*;
+import static org.gocoinj.script.ScriptOpCodes.*;
 
 /**
  * <p>Tools for the construction of commonly used script types. You don't normally need this as it's hidden behind

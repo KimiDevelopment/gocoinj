@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.wallet.KeyChainGroup;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.wallet.KeyChainGroup;
+import org.gocoinj.wallet.Wallet;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.bitcoinj.core.Utils.HEX;
+import static org.gocoinj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BloomFilterTest {

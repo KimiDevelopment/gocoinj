@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.*;
+import org.gocoinj.core.*;
 
 import java.util.HashSet;
 import java.util.Iterator;

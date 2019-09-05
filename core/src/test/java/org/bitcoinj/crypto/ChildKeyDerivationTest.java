@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.gocoinj.crypto;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.params.*;
+import org.gocoinj.core.*;
+import org.gocoinj.params.*;
 import org.junit.*;
 import org.bouncycastle.crypto.params.*;
 
-import static org.bitcoinj.core.Utils.*;
+import static org.gocoinj.core.Utils.*;
 import static org.junit.Assert.*;
 
 /**

@@ -15,23 +15,23 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
 import net.jcip.annotations.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.net.*;
-import org.bitcoinj.net.discovery.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
-import org.bitcoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.gocoinj.core.listeners.*;
+import org.gocoinj.net.*;
+import org.gocoinj.net.discovery.*;
+import org.gocoinj.script.*;
+import org.gocoinj.utils.*;
+import org.gocoinj.utils.Threading;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.listeners.KeyChainEventListener;
+import org.gocoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.gocoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.slf4j.*;
 
 import javax.annotation.*;

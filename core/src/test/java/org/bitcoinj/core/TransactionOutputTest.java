@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
 import com.google.common.collect.ImmutableList;
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.testing.TestWithWallet;
-import org.bitcoinj.wallet.SendRequest;
+import org.gocoinj.params.MainNetParams;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.script.ScriptPattern;
+import org.gocoinj.testing.TestWithWallet;
+import org.gocoinj.wallet.SendRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Before;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
+import org.gocoinj.store.BlockStore;
+import org.gocoinj.store.BlockStoreException;
 
 import java.math.BigInteger;
 import java.nio.ByteBuffer;

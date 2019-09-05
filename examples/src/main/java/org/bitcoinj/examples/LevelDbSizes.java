@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.gocoinj.examples;
 
 import static org.fusesource.leveldbjni.JniDBFactory.*;
 

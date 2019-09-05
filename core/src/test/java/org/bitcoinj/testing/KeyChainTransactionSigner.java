@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.crypto.ChildNumber;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.signers.CustomTransactionSigner;
-import org.bitcoinj.wallet.DeterministicKeyChain;
+import org.gocoinj.core.Sha256Hash;
+import org.gocoinj.crypto.ChildNumber;
+import org.gocoinj.crypto.DeterministicKey;
+import org.gocoinj.signers.CustomTransactionSigner;
+import org.gocoinj.wallet.DeterministicKeyChain;
 import com.google.common.collect.ImmutableList;
 
 import java.util.List;

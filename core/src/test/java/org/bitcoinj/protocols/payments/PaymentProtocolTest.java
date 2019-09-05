@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.payments;
+package org.gocoinj.protocols.payments;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.crypto.X509Utils;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.protocols.payments.PaymentProtocol.Output;
-import org.bitcoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.bitcoinj.protocols.payments.PaymentProtocolException.PkiVerificationException;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.testing.FakeTxBuilder;
+import org.gocoinj.core.Address;
+import org.gocoinj.core.Coin;
+import org.gocoinj.core.ECKey;
+import org.gocoinj.core.LegacyAddress;
+import org.gocoinj.core.NetworkParameters;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.crypto.X509Utils;
+import org.gocoinj.params.TestNet3Params;
+import org.gocoinj.params.UnitTestParams;
+import org.gocoinj.protocols.payments.PaymentProtocol.Output;
+import org.gocoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.gocoinj.protocols.payments.PaymentProtocolException.PkiVerificationException;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.testing.FakeTxBuilder;
 import org.bitcoin.protocols.payments.Protos;
 import org.bitcoin.protocols.payments.Protos.Payment;
 import org.bitcoin.protocols.payments.Protos.PaymentACK;

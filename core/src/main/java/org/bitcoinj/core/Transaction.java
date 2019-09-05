@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.gocoinj.core;
 
-import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptError;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.script.ScriptOpCodes;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.signers.TransactionSigner;
-import org.bitcoinj.utils.ExchangeRate;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletTransaction.Pool;
+import org.gocoinj.core.TransactionConfidence.ConfidenceType;
+import org.gocoinj.crypto.TransactionSignature;
+import org.gocoinj.script.Script;
+import org.gocoinj.script.Script.ScriptType;
+import org.gocoinj.script.ScriptBuilder;
+import org.gocoinj.script.ScriptError;
+import org.gocoinj.script.ScriptException;
+import org.gocoinj.script.ScriptOpCodes;
+import org.gocoinj.script.ScriptPattern;
+import org.gocoinj.signers.TransactionSigner;
+import org.gocoinj.utils.ExchangeRate;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletTransaction.Pool;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.ImmutableMap;
@@ -42,7 +42,7 @@ import javax.annotation.Nullable;
 import java.io.*;
 import java.util.*;
 
-import static org.bitcoinj.core.Utils.*;
+import static org.gocoinj.core.Utils.*;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
 import java.math.BigInteger;

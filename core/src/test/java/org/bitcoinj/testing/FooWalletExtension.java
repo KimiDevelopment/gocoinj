@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.testing;
+package org.gocoinj.testing;
 
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletExtension;
+import org.gocoinj.wallet.Wallet;
+import org.gocoinj.wallet.WalletExtension;
 
 import java.util.Arrays;
 

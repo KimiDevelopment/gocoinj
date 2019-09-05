@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.signers;
+package org.gocoinj.signers;
 
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.crypto.ChildNumber;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.wallet.KeyBag;
-import org.bitcoinj.wallet.Wallet;
+import org.gocoinj.core.Transaction;
+import org.gocoinj.crypto.ChildNumber;
+import org.gocoinj.script.Script;
+import org.gocoinj.wallet.KeyBag;
+import org.gocoinj.wallet.Wallet;
 
 import java.util.HashMap;
 import java.util.List;

@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.gocoinj.wallet;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.*;
+import org.gocoinj.core.*;
+import org.gocoinj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Stopwatch;
