@@ -219,7 +219,20 @@ public class Block extends Message {
      * </p>
      */
     public Coin getBlockInflation(int height) {
-        return FIFTY_COINS.shiftRight(height / params.getSubsidyDecreaseBlockCount());
+        int subsidyPeriod = (height - 10) / params.getSubsidyDecreaseBlockCount();
+
+        switch(subsidyPeriod) {
+            case 0:
+                return COIN.multiply(4);
+            case 1:
+                return COIN.multiply(3);
+            case 2:
+                return COIN.multiply(2);
+            case 3:
+                return COIN.multiply(1);
+            default:
+                return COIN.multiply(0);
+        }
     }
 
     /**
