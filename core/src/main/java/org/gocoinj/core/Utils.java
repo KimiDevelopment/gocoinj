@@ -36,6 +36,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
 import org.bouncycastle.crypto.digests.RIPEMD160Digest;
+import com.lambdaworks.crypto.SCrypt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -274,6 +275,14 @@ public class Utils {
         byte[] out = new byte[20];
         digest.doFinal(out, 0);
         return out;
+    }
+
+    public static byte[] scryptDigest(byte[] input) {
+        try {
+            return SCrypt.scrypt(input, input, 1024, 1, 1, 32);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**

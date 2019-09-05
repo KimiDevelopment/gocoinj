@@ -31,6 +31,7 @@ import java.util.*;
 import static com.google.common.base.Preconditions.checkState;
 import static org.gocoinj.core.Coin.*;
 import static org.gocoinj.core.Sha256Hash.*;
+import static org.gocoinj.core.Utils.scryptDigest;
 
 /**
  * <p>A block is a group of transactions, and is one of the fundamental data structures of the Bitcoin system.
@@ -104,6 +105,7 @@ public class Block extends Message {
 
     /** Stores the hash of the block. If null, getHash() will recalculate it. */
     private Sha256Hash hash;
+    private Sha256Hash scryptHash;
 
     protected boolean headerBytesValid;
     protected boolean transactionBytesValid;
@@ -409,6 +411,16 @@ public class Block extends Message {
         }
     }
 
+    private Sha256Hash calculateScryptHash() {
+        try {
+            ByteArrayOutputStream bos = new UnsafeByteArrayOutputStream(HEADER_SIZE);
+            writeHeader(bos);
+            return Sha256Hash.wrapReversed(scryptDigest(bos.toByteArray()));
+        } catch (IOException e) {
+            throw new RuntimeException(e); // Cannot happen.
+        }
+    }
+
     /**
      * Returns the hash of the block (which for a valid, solved block should be below the target) in the form seen on
      * the block explorer. If you call this on block 1 in the mainnet chain
@@ -416,6 +428,10 @@ public class Block extends Message {
      */
     public String getHashAsString() {
         return getHash().toString();
+    }
+
+    public String getScryptHashAsString() {
+        return getScryptHash().toString();
     }
 
     /**
@@ -427,6 +443,12 @@ public class Block extends Message {
         if (hash == null)
             hash = calculateHash();
         return hash;
+    }
+
+    public Sha256Hash getScryptHash() {
+        if (scryptHash == null)
+            scryptHash = calculateScryptHash();
+        return scryptHash;
     }
 
     /**
@@ -526,7 +548,7 @@ public class Block extends Message {
     public BigInteger getDifficultyTargetAsInteger() throws VerificationException {
         BigInteger target = Utils.decodeCompactBits(difficultyTarget);
         if (target.signum() <= 0 || target.compareTo(params.maxTarget) > 0)
-            throw new VerificationException("Difficulty target is bad: " + target.toString());
+            throw new VerificationException("Difficulty target is bad: " + target.toString() + " or " + difficultyTarget);
         return target;
     }
 
@@ -542,11 +564,11 @@ public class Block extends Message {
         // field is of the right value. This requires us to have the preceding blocks.
         BigInteger target = getDifficultyTargetAsInteger();
 
-        BigInteger h = getHash().toBigInteger();
+        BigInteger h = getScryptHash().toBigInteger();
         if (h.compareTo(target) > 0) {
             // Proof of work check failed!
             if (throwException)
-                throw new VerificationException("Hash is higher than target: " + getHashAsString() + " vs "
+                throw new VerificationException("Hash is higher than target: " + getScryptHashAsString() + " vs "
                         + target.toString(16));
             else
                 return false;
