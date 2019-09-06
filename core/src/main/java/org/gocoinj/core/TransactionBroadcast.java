@@ -56,7 +56,7 @@ public class TransactionBroadcast {
     TransactionBroadcast(PeerGroup peerGroup, Transaction tx) {
         this.peerGroup = peerGroup;
         this.tx = tx;
-        this.minConnections = Math.max(1, peerGroup.getMinBroadcastConnections());
+        this.minConnections = 1;
     }
 
     // Only for mock broadcasts.

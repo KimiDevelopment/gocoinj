@@ -2018,7 +2018,7 @@ public class PeerGroup implements TransactionBroadcaster {
      */
     @Override
     public TransactionBroadcast broadcastTransaction(final Transaction tx) {
-        return broadcastTransaction(tx, Math.max(1, getMinBroadcastConnections()));
+        return broadcastTransaction(tx, 1);
     }
 
     /**
