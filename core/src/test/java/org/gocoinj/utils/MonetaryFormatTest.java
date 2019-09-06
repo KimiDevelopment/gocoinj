@@ -218,7 +218,7 @@ public class MonetaryFormatTest {
 
     @Test
     public void standardSymbol() throws Exception {
-        assertEquals(MonetaryFormat.SYMBOL_BTC + " 0.00", new MonetaryFormat(true).format(Coin.ZERO).toString());
+        assertEquals(MonetaryFormat.CODE_BTC + " 0.00", new MonetaryFormat(true).format(Coin.ZERO).toString());
     }
 
     @Test
