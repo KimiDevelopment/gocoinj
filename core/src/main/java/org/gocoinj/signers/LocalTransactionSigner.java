@@ -19,13 +19,7 @@ package org.gocoinj.signers;
 
 import java.util.EnumSet;
 
-import org.gocoinj.core.Coin;
-import org.gocoinj.core.ECKey;
-import org.gocoinj.core.LegacyAddress;
-import org.gocoinj.core.Transaction;
-import org.gocoinj.core.TransactionInput;
-import org.gocoinj.core.TransactionOutput;
-import org.gocoinj.core.TransactionWitness;
+import org.gocoinj.core.*;
 import org.gocoinj.crypto.DeterministicKey;
 import org.gocoinj.crypto.TransactionSignature;
 import org.gocoinj.script.Script;
@@ -82,8 +76,7 @@ public class LocalTransactionSigner implements TransactionSigner {
                 // We assume if its already signed, its hopefully got a SIGHASH type that will not invalidate when
                 // we sign missing pieces (to check this would require either assuming any signatures are signing
                 // standard output types or a way to get processed signatures out of script execution)
-                txIn.getScriptSig().correctlySpends(tx, i, txIn.getWitness(), connectedOutput.getValue(),
-                        connectedOutput.getScriptPubKey(), MINIMUM_VERIFY_FLAGS);
+                txIn.getScriptSig().correctlySpends(tx, i, txIn.getConnectedOutput().getScriptPubKey(), txIn.getConnectedOutput().getValue(), MINIMUM_VERIFY_FLAGS);
                 log.warn("Input {} already correctly spends output, assuming SIGHASH type used will be safe and skipping signing.", i);
                 continue;
             } catch (ScriptException e) {
@@ -115,8 +108,9 @@ public class LocalTransactionSigner implements TransactionSigner {
             try {
                 if (ScriptPattern.isP2PK(scriptPubKey) || ScriptPattern.isP2PKH(scriptPubKey)
                         || ScriptPattern.isP2SH(scriptPubKey)) {
-                    TransactionSignature signature = tx.calculateSignature(i, key, script, Transaction.SigHash.ALL,
-                            false);
+                    TransactionSignature signature = propTx.useForkId ?
+                            tx.calculateWitnessSignature(i, key, script, tx.getInput(i).getConnectedOutput().getValue(), Transaction.SigHash.ALL, false) :
+                            tx.calculateSignature(i, key, script, Transaction.SigHash.ALL, false);
 
                     // at this point we have incomplete inputScript with OP_0 in place of one or more signatures. We
                     // already have calculated the signature using the local key and now need to insert it in the

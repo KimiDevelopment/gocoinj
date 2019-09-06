@@ -4059,6 +4059,12 @@ public class Wallet extends BaseTaggableObject
         return sendCoins(broadcaster, request);
     }
 
+    public SendResult sendCoins(TransactionBroadcaster broadcaster, Address to, Coin value, boolean useforkId) throws InsufficientMoneyException {
+        SendRequest request = SendRequest.to(to, value);
+        request.setUseForkId(useforkId);
+        return sendCoins(broadcaster, request);
+    }
+
     /**
      * <p>Sends coins according to the given request, via the given {@link TransactionBroadcaster}.</p>
      *
@@ -4203,6 +4209,10 @@ public class Wallet extends BaseTaggableObject
         lock.lock();
         try {
             checkArgument(!req.completed, "Given SendRequest has already been completed.");
+            // set version
+            if(req.getUseForkId())
+                req.tx.setVersion(Transaction.CURRENT_VERSION);
+
             // Calculate the amount of value we need to import.
             Coin value = Coin.ZERO;
             for (TransactionOutput output : req.tx.getOutputs()) {
@@ -4359,7 +4369,7 @@ public class Wallet extends BaseTaggableObject
                 txIn.setWitness(scriptPubKey.createEmptyWitness(redeemData.keys.get(0)));
             }
 
-            TransactionSigner.ProposedTransaction proposal = new TransactionSigner.ProposedTransaction(tx);
+            TransactionSigner.ProposedTransaction proposal = new TransactionSigner.ProposedTransaction(tx, req.getUseForkId());
             for (TransactionSigner signer : signers) {
                 if (!signer.signInputs(proposal, maybeDecryptingKeyBag))
                     log.info("{} returned false for the tx", signer.getClass().getName());
