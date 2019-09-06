@@ -137,6 +137,11 @@ public abstract class AbstractBitcoinNetParams extends NetworkParameters {
         bnNew = bnNew.multiply(BigInteger.valueOf(nActualTimespan));
         bnNew = bnNew.divide(BigInteger.valueOf(nTargetTimespan));
 
+        if (bnNew.compareTo(getMaxTarget()) > 0) {
+            log.info("Difficulty hit proof of work limit: {}", bnNew.toString(16));
+            bnNew = getMaxTarget();
+        }
+
         int accuracyBytes = (int) (nextBlock.getDifficultyTarget() >>> 24) - 3;
         BigInteger receivedDifficulty = nextBlock.getDifficultyTargetAsInteger();
 
