@@ -260,7 +260,7 @@ public class SendRequest {
     }
 
     /** Use Version 2 Transactions with forkid signatures **/
-    private boolean useForkId = false;
+    private boolean useForkId = true;
 
     public void setUseForkId(boolean useForkId)
     {

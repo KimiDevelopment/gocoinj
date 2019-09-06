@@ -64,7 +64,7 @@ public interface TransactionSigner {
             this.useForkId = useForkId;
         }
 
-        boolean useForkId = false;
+        boolean useForkId = true;
     }
 
     class MissingSignatureException extends RuntimeException {
