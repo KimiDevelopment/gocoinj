@@ -796,9 +796,6 @@ public class Transaction extends ChildMessage {
         if (hasRelativeLockTime()) {
             s.append(indent).append("has relative lock time\n");
         }
-        if (isOptInFullRBF()) {
-            s.append(indent).append("opts into full replace-by-fee\n");
-        }
         if (purpose != null)
             s.append(indent).append("purpose: ").append(purpose).append('\n');
         if (isCoinBase()) {
@@ -848,8 +845,6 @@ public class Transaction extends ChildMessage {
                     s.append("  outpoint:").append(outpoint).append('\n');
                     if (in.hasSequence()) {
                         s.append(indent).append("        sequence:").append(Long.toHexString(in.getSequenceNumber()));
-                        if (in.isOptInFullRBF())
-                            s.append(", opts into full RBF");
                         if (version >= 2 && in.hasRelativeLockTime())
                             s.append(", has RLT");
                         s.append('\n');
@@ -1843,17 +1838,6 @@ public class Transaction extends ChildMessage {
             return false;
         for (TransactionInput input : getInputs())
             if (input.hasRelativeLockTime())
-                return true;
-        return false;
-    }
-
-    /**
-     * Returns whether this transaction will opt into the
-     * <a href="https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki">full replace-by-fee </a> semantics.
-     */
-    public boolean isOptInFullRBF() {
-        for (TransactionInput input : getInputs())
-            if (input.isOptInFullRBF())
                 return true;
         return false;
     }

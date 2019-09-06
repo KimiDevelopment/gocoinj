@@ -218,15 +218,6 @@ public class DefaultRiskAnalysisTest {
     }
 
     @Test
-    public void optInFullRBF() throws Exception {
-        Transaction tx = FakeTxBuilder.createFakeTx(MAINNET);
-        tx.getInput(0).setSequenceNumber(TransactionInput.NO_SEQUENCE - 2);
-        DefaultRiskAnalysis analysis = DefaultRiskAnalysis.FACTORY.create(wallet, tx, NO_DEPS);
-        assertEquals(RiskAnalysis.Result.NON_FINAL, analysis.analyze());
-        assertEquals(tx, analysis.getNonFinal());
-    }
-
-    @Test
     public void relativeLockTime() throws Exception {
         Transaction tx = FakeTxBuilder.createFakeTx(MAINNET);
         tx.setVersion(2);
