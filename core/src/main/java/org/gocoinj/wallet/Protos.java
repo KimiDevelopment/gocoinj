@@ -21316,7 +21316,7 @@ public final class Protos {
       "NCRYPTED\020\001\022\030\n\024ENCRYPTED_SCRYPT_AES\020\002\"R\n\014" +
       "ExchangeRate\022\022\n\ncoin_value\030\001 \002(\003\022\022\n\nfiat" +
       "_value\030\002 \002(\003\022\032\n\022fiat_currency_code\030\003 \002(\t" +
-      "B\035\n\023org.gocoinj.walletB\006Protos"
+      "B\034\n\022org.gocoinj.walletB\006Protos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
