@@ -67,7 +67,7 @@ public class MainNetParams extends AbstractBitcoinNetParams {
         // transactions are handled. Duplicated transactions could occur in the case where a coinbase had the same
         // extraNonce and the same outputs but appeared at different heights, and greatly complicated re-org handling.
         // Having these here simplifies block connection logic considerably.
-        // checkpoints.put(10, Sha256Hash.wrap("2446d3fbe939985dfb087e6aa96a97fb9fc4ea0e9c4f1f484417595e2407a33c"));
+        checkpoints.put(13, Sha256Hash.wrap("308661c57aa334b35844bc7556f28e2f4e087dc984ebb8d14b50cd1631bd34fa"));
 
         dnsSeeds = new String[] {
                 "seed1.gocoinproject.org",
