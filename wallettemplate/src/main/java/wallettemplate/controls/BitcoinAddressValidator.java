@@ -16,9 +16,9 @@
 
 package wallettemplate.controls;
 
-import org.gocoinj.core.Address;
-import org.gocoinj.core.AddressFormatException;
-import org.gocoinj.core.NetworkParameters;
+import org.versacoinj.core.Address;
+import org.versacoinj.core.AddressFormatException;
+import org.versacoinj.core.NetworkParameters;
 
 import javafx.scene.Node;
 import javafx.scene.control.TextField;

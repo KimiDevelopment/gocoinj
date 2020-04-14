@@ -16,12 +16,12 @@
 
 package wallettemplate.utils;
 
-import org.gocoinj.core.Address;
-import org.gocoinj.core.Coin;
-import org.gocoinj.core.listeners.DownloadProgressTracker;
-import org.gocoinj.wallet.Wallet;
-import org.gocoinj.wallet.listeners.CurrentKeyChangeEventListener;
-import org.gocoinj.wallet.listeners.WalletChangeEventListener;
+import org.versacoinj.core.Address;
+import org.versacoinj.core.Coin;
+import org.versacoinj.core.listeners.DownloadProgressTracker;
+import org.versacoinj.wallet.Wallet;
+import org.versacoinj.wallet.listeners.CurrentKeyChangeEventListener;
+import org.versacoinj.wallet.listeners.WalletChangeEventListener;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;

@@ -39,8 +39,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
-import org.gocoinj.core.Address;
-import org.gocoinj.uri.BitcoinURI;
+import org.versacoinj.core.Address;
+import org.versacoinj.uri.BitcoinURI;
 
 import wallettemplate.Main;
 import wallettemplate.utils.GuiUtils;

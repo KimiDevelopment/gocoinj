@@ -17,9 +17,9 @@
 package wallettemplate;
 
 import javafx.scene.layout.HBox;
-import org.gocoinj.core.*;
-import org.gocoinj.wallet.SendRequest;
-import org.gocoinj.wallet.Wallet;
+import org.versacoinj.core.*;
+import org.versacoinj.wallet.SendRequest;
+import org.versacoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

@@ -16,9 +16,9 @@
 
 package wallettemplate;
 
-import org.gocoinj.core.Utils;
-import org.gocoinj.crypto.MnemonicCode;
-import org.gocoinj.wallet.DeterministicSeed;
+import org.versacoinj.core.Utils;
+import org.versacoinj.crypto.MnemonicCode;
+import org.versacoinj.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;

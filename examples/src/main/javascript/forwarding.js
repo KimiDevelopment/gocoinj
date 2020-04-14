@@ -18,7 +18,7 @@
 //
 // This example shows how to implement the forwarding service demo from the Getting Started tutorial.
 
-var bcj = org.gocoinj;
+var bcj = org.versacoinj;
 var params = bcj.params.TestNet3Params.get();
 
 // Address where we'll send received coins (minus the miner fee)

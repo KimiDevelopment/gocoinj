@@ -16,7 +16,7 @@
 
 package wallettemplate.utils;
 
-import org.gocoinj.crypto.KeyCrypterScrypt;
+import org.versacoinj.crypto.KeyCrypterScrypt;
 import com.google.common.util.concurrent.Uninterruptibles;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.concurrent.Task;

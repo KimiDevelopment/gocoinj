@@ -50,7 +50,7 @@
 
 
 // Import some stuff.
-var bcj = org.gocoinj;
+var bcj = org.versacoinj;
 var ECKey = bcj.core.ECKey;
 
 // We'll use the testnet for now.
